@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>路西法預約系統</title>
+<style>
+
+body{
+background-image:url('lucifer.jpg');
+background-size:cover;
+background-position:center 25%;
+background-attachment:fixed;
+color:#d4af37;
+font-family:Arial;
+padding:30px;
+}
+
+input,
+select,
+textarea{
+width:300px;
+padding:10px;
+margin-bottom:15px;
+
+background:#111;
+color:#fff;
+
+border:2px solid #d4af37;
+border-radius:10px;
+}
+
+button{
+
+background:#d4af37;
+color:#000;
+
+padding:12px 30px;
+
+border:none;
+
+border-radius:10px;
+
+font-weight:bold;
+
+cursor:pointer;
+}
+
+button:hover{
+
+background:#f4d03f;
+}
+
+</style>
+
+</head>
+
+<body>
+<form action="send.php" method="POST">
+
+<h1>路西法預約系統</h1>
+
+<p>姓名</p>
+<input type="text" name="name">
+
+<p>電話</p>
+<input type="tel" name="phone">
+
+<p>LINE ID</p>
+<input type="text" name="lineid">
+
+<p>預約地區</p>
+<select name="area">
+  <option>桃園</option>
+  <option>礁溪</option>
+  <option>宜蘭</option>
+  <option>羅東</option>
+  <option>花蓮</option>
+</select>
+<p>預約日期</p>
+<input type="date" name="date">
+
+<p>預約時間</p>
+<input type="time" name="time">
+
+<p>備註</p>
+<textarea name="note"></textarea>
+
+<br><br>
+
+<button type="submit">
+送出預約
+</button>
+
+</form>
+
+</body>
+</html>
